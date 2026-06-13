@@ -1,16 +1,14 @@
 import random
 
-
 def get_secret_number():
     return random.randint(1, 10)
 
+def check_guess(secret, guess):
 
-def check_guess(secret_number, guess):
-
-    if guess < secret_number:
+    if guess < secret:
         return "Too low!"
 
-    elif guess > secret_number:
+    elif guess > secret:
         return "Too high!"
 
     else:
